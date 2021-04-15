@@ -5,6 +5,8 @@ Project to demonstrate use of:
   - Recycler Views
   - Room Local Database
   - Authentication
+  - Google Material Design Components
+  - JSON Data parsing and retrival
 <br>
 
 ## Screenshots
