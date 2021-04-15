@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Cart">
+
+    <TextView
+        android:id="@+id/txtResName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ordering_from_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/txtResName"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/line"
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="@string/place_order_total_rs_420"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</RelativeLayout>

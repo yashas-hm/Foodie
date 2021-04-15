@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtFoodId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/txtFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/txtFoodId"/>
+
+    <TextView
+        android:id="@+id/txtFoodCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rs_200"
+        android:layout_below="@+id/txtFoodItem"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/txtFoodId"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/add"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>
